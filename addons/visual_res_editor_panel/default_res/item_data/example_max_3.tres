@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://7xucoj62qn7e"]
+
+[ext_resource type="Script" uid="uid://b2ej3ilygm5rk" path="res://addons/visual_res_editor_panel/item_data/item_data_base.gd" id="2_moybr"]
+[ext_resource type="Script" uid="uid://x0db3hih18ax" path="res://addons/visual_res_editor_panel/item_data/item_data.gd" id="5_82m6h"]
+[ext_resource type="Script" uid="uid://cyqr2t2p867va" path="res://addons/visual_res_editor_panel/item_data/item_part/good_item_part.gd" id="5_moybr"]
+[ext_resource type="Script" uid="uid://c6utnxv0gqgc0" path="res://addons/visual_res_editor_panel/shape/shape.gd" id="5_syrmk"]
+
+[sub_resource type="Resource" id="Resource_hrjj3"]
+script = ExtResource("5_moybr")
+value = 10
+metadata/_custom_type_script = "uid://cyqr2t2p867va"
+
+[sub_resource type="Resource" id="Resource_4g1tx"]
+script = ExtResource("5_syrmk")
+
+[resource]
+script = ExtResource("5_82m6h")
+item_name = "堆叠东西"
+max_num = 3
+item_description = "这是一个试例资源，最大堆叠数为3。"
+shape = SubResource("Resource_4g1tx")
+parts = Array[ExtResource("2_moybr")]([SubResource("Resource_hrjj3")])
+metadata/_custom_type_script = "uid://x0db3hih18ax"
